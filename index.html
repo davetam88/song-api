@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Country Facts</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>Find Your Song Lyrics</h1>
+    <form action="#" class="js-search-form">
+      <!-- <span>Artist:</span> -->
+      <!-- <input type="text" class="js-query-artist" value="Coldplay" placeholder="Queen"> -->
+      <!-- <span>Song title:</span> -->
+      <!-- <input type="text" class="js-query-title" value="Adventure of a Lifetime" placeholder="Under Pressure"> -->
+  <div class="group-container">
+	<div class="item">
+      <div id="title-sel-list"></div>
+      <button type="submit">Search</button>
+	  </div>
+  </div>
+    </form>
+	<main>
+    <div class="hidden" id="results">
+	</main>
+
+    </div>
+  </div>
+  <script>
+    //  load states and activities options from external file.
+    $(function ()
+    {
+      $("#title-sel-list").load("title.html");
+    });
+  </script>
+  <script src="index.js"></script>
+</body>
+
+</html>
